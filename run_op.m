@@ -1,5 +1,10 @@
-% Run the Apollo guidance parameter search using N random cases
-results = apollo_guidance_search(10000);
+
+clear;clc;close all
+
+% Run the Artemis guidance parameter search using N random cases
+results = artemis_guidance_search(10000);
+
+plot_artemis_landing_map(results(1));
 
 % Display the first result in the results array
 results(1)
